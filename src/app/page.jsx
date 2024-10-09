@@ -1,7 +1,11 @@
-import React from "react";
+import Header from "@/components/header";
 
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return (
+    <main>
+      <Header />
+    </main>
+  );
 };
 
 export default Homepage;
