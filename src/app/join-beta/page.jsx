@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter } from "@/ui/card";
 import { Checkbox } from "@/ui/checkbox";
 import { Input } from "@/ui/input";
 import { Label } from "@/ui/label";
+import Link from "next/link";
 import React from "react";
 
 const JoinBeta = () => {
@@ -19,14 +20,14 @@ const JoinBeta = () => {
       </div>
 
       <div className="signup-form grow basis-0 flex justify-center items-center bg-[url('/images/bg-signup.png')] bg-cover bg-no-repeat bg-center">
-        <Card className="form p-8 w-fit">
+        <Card className="form p-6 mx-2 w-fit">
           <CardContent className="space-y-3">
             <div className="flex flex-wrap gap-2">
-              <div className="firstname">
+              <div className="firstname grow">
                 <Label htmlFor="firstname">First Name</Label>
                 <Input id="firstname" type="text" />
               </div>
-              <div className="lastname">
+              <div className="lastname grow">
                 <Label htmlFor="lastname">Last Name</Label>
                 <Input id="lastname" type="text" />
               </div>
@@ -51,7 +52,9 @@ const JoinBeta = () => {
             </div>
           </CardContent>
           <CardFooter className="justify-center">
-            <Button>Join our private beta</Button>
+            <Button asChild>
+              <Link href="/thank-you">Join our private beta</Link>
+            </Button>
           </CardFooter>
         </Card>
       </div>
