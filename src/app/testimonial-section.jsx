@@ -13,7 +13,7 @@ import React from "react";
 
 const TestimonialSection = () => {
   return (
-    <div className="bg-foreground/95 text-background">
+    <div className="bg-secondary-foreground text-secondary">
       <section className="testimonial container flex items-start wrap gap-8 p-8 py-16 mx-auto">
         <div className="testimonial-content basis-0 grow">
           <h2 className="text-5xl font-bold mb-4">

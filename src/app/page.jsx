@@ -1,11 +1,7 @@
-import { Button } from "@/ui/button";
-import { Input } from "@/ui/input";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-
 import Header from "@/components/header";
 import TestimonialSection from "./testimonial-section";
 import HeroSection from "./hero-section";
+import Footer from "@/components/footer";
 
 const Homepage = () => {
   return (
@@ -13,6 +9,7 @@ const Homepage = () => {
       <Header />
       <HeroSection />
       <TestimonialSection />
+      <Footer />
     </main>
   );
 };
