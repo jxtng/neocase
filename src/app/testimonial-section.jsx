@@ -47,7 +47,7 @@ const TestimonialSection = () => {
             <p className="author italic ml-2 mt-2">~ Aria Zinanrio</p>
           </blockquote>
 
-          <div className="avatars flex gap-3 ml-2">
+          <div className="avatars flex gap-3 ml-2 mb-8">
             {[
               "/images/avatar-4.png",
               "/images/avatar-5.png",
@@ -74,22 +74,24 @@ const TestimonialSection = () => {
 
 function ContactCard() {
   return (
-    <Card className="contact-card w-[500px] bg-white/5 border-0 py-8 px-2 text-background">
-      <CardHeader>
-        <CardTitle className="text-3xl text-center">Contact Us</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-2 space-y-reverse">
-        <Label htmlFor="email">Email: </Label>
-        <Input id="email" type="email" placeholder="Enter your email" />
-        <Label htmlFor="message">Message: </Label>
-        <Textarea id="message" placeholder="Enter your message" />
-      </CardContent>
-      <CardFooter>
-        <Button className="w-full" variant="default">
-          Submit
-        </Button>
-      </CardFooter>
-    </Card>
+    <div className="flex flex-col w-[500px] justify-between">
+      <Card className="contact-card bg-white/5 border-0 py-8 px-2 text-background">
+        <CardHeader>
+          <CardTitle className="text-3xl text-center">Contact Us</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-2 space-y-reverse">
+          <Label htmlFor="email">Email: </Label>
+          <Input id="email" type="email" placeholder="Enter your email" />
+          <Label htmlFor="message">Message: </Label>
+          <Textarea id="message" placeholder="Enter your message" />
+        </CardContent>
+        <CardFooter>
+          <Button className="w-full" variant="default">
+            Submit
+          </Button>
+        </CardFooter>
+      </Card>
+    </div>
   );
 }
 

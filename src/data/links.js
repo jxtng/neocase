@@ -1,4 +1,4 @@
-export default [
+export const headerLinks = [
   {
     title: "Home",
     href: "/",
@@ -10,5 +10,16 @@ export default [
   {
     title: "Blog",
     href: "/blog",
+  },
+];
+
+export const footerLinks = [
+  {
+    title: "Terms of Service",
+    href: "/terms",
+  },
+  {
+    title: "Privacy Policy",
+    href: "/privacy",
   },
 ];

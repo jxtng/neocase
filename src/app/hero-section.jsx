@@ -73,9 +73,9 @@ const HeroSection = () => {
               ))}
             </div>
           </div>
-          <Button className="flex gap-2 shadow-lg mt-1">
+          <Button className="flex gap-2 shadow-lg mt-1 group">
             Join waitlist
-            <ArrowRight />
+            <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
           </Button>
         </div>
       </section>
