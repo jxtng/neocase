@@ -2,17 +2,20 @@ import Image from "next/image";
 import { Button } from "@/ui/button";
 import { headerLinks } from "@/data/links";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const Header = ({ hideLinks }) => {
   return (
     <header className="header container mx-auto p-8 flex justify-between items-center">
       <div className="logo">
-        <Image
-          src="/images/logo.png"
-          alt="Neocase logo"
-          width={195}
-          height={57}
-        />
+        <Link href="/">
+          <Image
+            src="/images/logo.png"
+            alt="Neocase logo"
+            width={195}
+            height={57}
+          />
+        </Link>
       </div>
       {!hideLinks && (
         <nav className="flex items-center gap-16">

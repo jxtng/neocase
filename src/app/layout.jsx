@@ -7,7 +7,10 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Neocase",
+  title: {
+    template: "Neocase | %s",
+    default: "Neocase",
+  },
 };
 
 export default function RootLayout({ children }) {

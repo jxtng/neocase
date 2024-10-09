@@ -7,6 +7,10 @@ import { Label } from "@/ui/label";
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "Join Beta",
+};
+
 const JoinBeta = () => {
   return (
     <div className="flex min-h-screen">
