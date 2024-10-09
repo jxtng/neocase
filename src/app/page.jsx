@@ -1,14 +1,15 @@
-import Header from "@/components/header";
 import { Button } from "@/ui/button";
 import { Input } from "@/ui/input";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
+import Header from "@/components/header";
+import TestimonialSection from "./testimonial-section";
+
 const Homepage = () => {
   return (
     <main>
       <Header />
-
       <section className="hero flex gap-4 justify-between items-start container mx-auto p-8">
         <div className="content w-2/5 space-y-3">
           <h1 className="font-bold text-6xl">
@@ -82,6 +83,8 @@ const Homepage = () => {
           </Button>
         </div>
       </section>
+
+      <TestimonialSection />
     </main>
   );
 };
