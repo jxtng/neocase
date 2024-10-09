@@ -9,6 +9,7 @@ import {
 import { Input } from "@/ui/input";
 import { Label } from "@/ui/label";
 import { Textarea } from "@/ui/textarea";
+import Image from "next/image";
 import React from "react";
 
 const TestimonialSection = () => {
@@ -37,7 +38,7 @@ const TestimonialSection = () => {
             <path d="M35 0H45L38 38H23.5L35 0Z" fill="#D9D9D9" />
           </svg>
 
-          <blockquote className="w-96 ml-2 text-justify">
+          <blockquote className="w-96 ml-2 mb-2 text-justify">
             As a solo practitioner, I needed a tool that could handle everything
             from case management to billing. This software has exceeded my
             expectations. The intuitive interface and powerful features have
@@ -45,6 +46,25 @@ const TestimonialSection = () => {
             quality legal services to my clients
             <p className="author italic ml-2 mt-2">~ Aria Zinanrio</p>
           </blockquote>
+
+          <div className="avatars flex gap-3 ml-2">
+            {[
+              "/images/avatar-4.png",
+              "/images/avatar-5.png",
+              "/images/avatar-6.png",
+              "/images/avatar-7.png",
+              "/images/play.svg",
+            ].map((src, index) => (
+              <Image
+                key={index}
+                src={src}
+                alt="An avatar of a person"
+                width={45}
+                height={45}
+                className="rounded-full border border-primary"
+              />
+            ))}
+          </div>
         </div>
         <ContactCard />
       </section>
